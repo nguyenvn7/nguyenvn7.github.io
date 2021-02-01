@@ -1,0 +1,367 @@
+ /* Common */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+html,body{
+    /* background-color: #000; */
+    /* height: 100%; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.text-white{
+    color: #ffffff;
+}
+
+/* HEADING */
+
+ #heading{
+     height: 46px;
+     background-color: #000;
+     position: fixed;
+     width: 100%;
+     top:0;
+     z-index: 1;
+ }
+
+#heading .search{
+    line-height: 46px;
+    padding: 0 19px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+#heading .search:hover {
+    background-color: rgb(241, 56, 56);
+}
+
+ #nav  > li{
+     list-style-type: none;
+     display: inline-block;
+     font-family: Arial, Helvetica, sans-serif;    
+     position: relative; 
+ }
+
+
+ #heading  li:hover  > a{
+        color: rgba(54, 241, 54, 0.877);
+        background-color: rgb(102, 100, 100);
+        
+ }
+
+ #heading a{
+     /* color: #fff; */
+     text-decoration: none;
+     text-transform: uppercase; 
+     display:block; 
+     padding: 0 24px;
+     line-height: 46px;
+}
+
+ #heading  .subnav {
+          display: none; 
+         position: absolute;
+         background-color: #fff;    
+         box-shadow: 0 0 15px rgba(23, 24, 23, 0.39);
+         list-style-type: none;
+ }
+
+#heading .subnav a{
+    color: #000;
+    line-height: 38px;
+}
+
+ #heading li:hover .subnav{
+    display: block;
+ }
+
+
+ /* SLIDER */
+
+
+ #slider{
+    margin-top: 46px;
+    padding-top: 50%;
+     background-image: url(/assets/img/chicago.jpg);
+     background-size: cover;
+     position: relative;
+ }
+
+#slider #text{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 92px;
+    font-size: 24px;
+    font-weight: 500;
+  
+}
+
+
+@media(max-width: 740px){
+    #main-content .member-list ,.member-item{
+        float: none!important;
+        width: 100%!important;
+        margin: 15px 0px!important;
+    }
+    #place .sub-p{
+    float: none;
+    width: auto;
+    margin-bottom: 10px;
+    }
+
+    .main-contact .text,.form{
+        width: 100%!important;
+        float: none!important;
+    }
+    .form .text-form{
+        width: 100%!important;
+    }  
+    
+}
+
+
+
+/* MAIN */
+
+
+
+/* MAIN-CONTENT */
+ #main-content #content,#black-content,#contact{
+  
+    margin: auto;
+    padding:64px 14px;
+    text-align: center; 
+    max-width: 800px;
+    
+}
+
+
+
+.main-contact{
+    text-align: initial;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+#contact #submit{
+    background-color: #000;
+    color: #fff;
+    border: 0px;
+    padding: 8px 15px;
+    margin-top: 16px;
+    float: right;
+}
+
+#contact .text,.form{
+    float: left;
+    width: 50%;
+}
+
+#contact .content-contac{
+    line-height: 1.6;
+}
+
+#contact i[class*="ti-"]{
+    padding-right: 10px;
+}
+
+#contact .text{
+    font-size: 18px;
+    
+}
+
+#contact .text-form{
+    margin-bottom: 8px;
+}
+
+#contact #name,#email{
+    width: 49.2%;
+    padding: 10px;
+}
+#contact #mes{
+    width: 100%;
+    padding: 10px;
+}
+
+#main-content .member-list .member-item{
+    float: left;
+    width: calc(100%/3);
+   
+}
+
+#main-content .sub-content{
+    margin: 25px 0px 15px 0px;
+    font-style: italic;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+
+
+#main-content .content-heading{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+ .member-list{
+   overflow: hidden;
+   margin: 47px auto 47px auto;
+}
+
+.member-list .member-img{
+    width: 60%;
+    border-radius: 10px;
+}
+
+.member-list .member-name{
+    margin-bottom: 15px;
+}
+
+#content #content-description{
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+}
+
+#main-content #background-black{
+    background-color: #000;
+     color: #fff; 
+}
+
+#list {
+    background-color: #fff;
+    color:#757575;
+    text-align: start;
+    list-style-type: none;
+    margin-top: 40px ;
+    font-size: 15px;
+}
+
+#list .list-description{
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+#list .sold-out{
+    background-color: #F44336;
+    color: #fff;
+    padding: 3px 7px;
+    margin-left: 16px;
+}
+
+#list .quantity{
+    float: right;
+    background-color: #000;
+    color: #fff;    
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+}
+
+
+/* Black-content */
+
+.sub-bg,#content{
+    max-width: 800px;
+    margin: auto;
+    padding: 0 16px;
+}
+
+#background-black{
+    /* overflow: hidden; */
+}
+
+#place{
+    overflow: hidden; 
+    margin-left: -8px;
+    margin-right: -8px;
+    
+}
+
+  .sub-p{
+    float: left;
+    width: calc(100% /3);
+    padding: 0 8px;
+    color: #000;
+}
+
+#place .content-place{
+    padding:0 16px;
+    background-color: #fff;
+   
+}
+
+#place .head-place{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#place .time-place{
+    opacity: 0.6;
+}
+
+#place .head-place,#place .time-place
+,#place .description-place
+{
+    padding-top: 15px;
+}
+
+#place .buy-ticket{
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 10px;
+    margin: 15px 0;
+    display: inline-block;
+}
+
+#place .place-img{
+    width: 100%;
+    display: block;
+}
+
+#background-black  .sub-bg{
+    padding-bottom: 100px;
+}
+
+#background-black #contact{
+    background-color: #fff;
+    color: black;
+}
+
+#map{
+    width: 100%;
+    filter: grayscale(50%);
+}
+
+#footer {
+    padding: 64px;
+    text-align: center;
+    
+}
+
+#footer a{
+    text-decoration: none;
+    font-size: 20px;
+    color:#757575;
+}
+
+#footer .content-footer,#footer .link{
+    font-size: 12px;
+    padding: 7px;
+    
+}
+#footer .link{
+    text-decoration: underline;
+}
