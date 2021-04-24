@@ -1,0 +1,118 @@
+*,body{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.fas{
+    font-size: 25px;
+    line-height: 50px!important;
+}
+#main{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+#header{
+    position: relative;
+    padding: 10px;
+
+}
+
+#header .nav{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+.image{
+   background-image: url(/img/mountain_moon_art_140992_1366x768.jpg);
+   width: 200px;
+   height: 200px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 100%;
+    margin: 30px auto;
+ } 
+
+ 
+ #foo{
+     display: flex;
+     justify-content: space-evenly;
+     margin: 30px;
+    }
+
+
+
+.pink{
+    color: rgb(247, 80, 107);
+}
+
+.grey{
+    color:grey;
+}
+    
+ .font{
+     font-size: 50px;
+ }
+ 
+ #upnext{
+     position: absolute;
+     border: 1px solid #e0dbdb;
+     display: inline-block;
+     padding: 5px 10px;
+     border-radius: 30px;
+     font-size: 10px;
+     color: grey;
+     font-weight: 900;
+     background-color: white;
+     bottom: -12px;
+     width: 50px;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    z-index: 1;
+ }
+
+ #content{
+     text-align: start;
+     background-color: #f8f7f7;
+     padding: 10px;
+     position: relative;
+     height: 500px;
+     overflow-y: scroll;
+     
+ }
+
+
+#content::-webkit-scrollbar{
+    width: 5px;
+  
+}
+
+#content::-webkit-scrollbar-thumb{
+    width: 2px;
+    height: 2px;
+    background: black;
+}
+
+ .list-music{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px;
+    padding: 10px;
+    background-color:white;
+    border-radius: 4px;
+    box-shadow: 0 0 6px ;
+ }
+
+ .list-img{
+     background-image: url(/img/WNM1.jpg);
+     width: 50px;
+     height: 50px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-radius: 100%;
+ }
